@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" type="text/css" href="css/sty.css">
+<link rel="icon" href="images/atm.png" type="image/icon type">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    </head>
+
+
+
+<body>
+	<section>
+     <!--navigation------->
+    	<nav>
+        
+      <a class="navbar-brand" href="#"> 
+            <img src= "images/atm.png"
+            width="90" height="50" alt=""> 
+        </a>
+
+        <a href="index1.html"></a>
+        <div class="logo">Music recommendation system</div>
+
+     	
+     	
+     		<ul>
+     			<li><a href="index1.html" class="active">Home</a></li>
+     			<li><a href="#">Moods</a></li>
+     			<li><a href="#">About</a></li>
+     			<li><a href="#">Contact</a></li>
+    		</ul>
+
+    			
+        <div class="toggle"></div>
+    		
+		</nav>
+        
+      </section> 
+
+
+   <!--mood tiles---------->
+   <div class="container">
+   	    <div class="row1">
+   	    	<div class="box-1">
+   	    		<span>1</span>
+                    <p class="heading">Happy</p>
+                 
+                    <button>Explore</button>
+             </div>
+
+             <div class="box-3">
+                    <span>2</span>
+                    <p class="heading">Sad</p>
+                    
+                    <button>Explore</button>
+            </div>
+
+        </div>
+        <!-----row 1 ends------------->
+        
+
+        <div class="row2">
+        	<div class="box-4">
+        			<span>3</span>
+                    <p class="heading">Energetic & Workout</p>
+                    
+                    <button>Explore</button>
+             </div> 
+
+
+            <div class="box-5">
+              <span>4</span>
+              <p class="heading">Travel and chill</p>
+              
+              <button>Explore</button>
+            </div>
+
+            <div class="box-6">
+              <span>5</span>
+              <p class="heading">Trending</p>
+              
+              <button>Explore</button>
+            </div>
+        </div>
+        <!------row 2 ends--------->    
+    </div>
+<!--mood tiles end---->
+
+<footer>
+	<div class="About-us">
+  		<p>We are group of Music lovers who like to discover to songs which tell untold stories and emotions</p>
+  		<p>Whether you are feeling sad,happy or whether you want to workout ,travel we have perfect recommendations of songs for you</p>
+  		<p>Hope you enjoy it!</p>
+  	</div>
+</footer>
+
+
+<!--JQuery-->
+        
+
+        <script text="text/javascript" src="js/jquery.js"></script>
+        <script text="text/javascript">
+            $(document).ready(function(){
+                $('.toggle').click(function(){
+                    $('.toggle').toggleClass('active')
+                    $('nav').toggleClass('active')
+                })
+            })
+        </script>
+
+
+
+
+
+</body>
+</html>

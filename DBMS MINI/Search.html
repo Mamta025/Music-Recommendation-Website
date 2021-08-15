@@ -1,0 +1,93 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> atm </title>
+	<link rel="stylesheet" href="css/styleSearch.css">
+	<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+	<link rel="icon" href="images/atm.png" type="image/icon type">
+</head>
+<body>
+
+	<section>
+     <!--navigation------->
+    	<nav>
+
+    	<a class="navbar-brand" href="#"> 
+            <img src= "images/atm.png"
+            width="90" height="50" alt=""> 
+        </a>
+
+        <a href="page2.html"></a>
+        <div class="logo">Music recommendation system</div>
+
+
+     		<ul>
+     			<li><a href="index1.php" class="active">Home</a></li>
+     			<li><a href="Search.html" class="active">Search</a></li>
+     			<li><a href="index1.php#About-Header">About</a></li>
+     			<li><a href="index1.php#Contact-Header">Contact</a></li>
+    		</ul>
+
+
+        <div class="toggle"></div>
+
+		</nav>
+
+      </section>
+
+      <div class="title">
+          <p>
+    	<h1 style="color:#DAF7A6 ;font-family: 'Great Vibes', cursive; text-align: center;font-size: 3em; font-stretch: ultra-expanded; letter-spacing: 5px ; "> Search </h1>
+</p>
+      </div>
+          
+	<div class="container">
+		<div class="box">
+		<a href="searchBySinger.php"><button>
+		<h1 style="font-family: 'Satisfy', cursive;">By Artist</h1>	
+		</div>
+	</button></a>
+
+		<div class="box">
+			<a href="searchByProducer.php">
+				<button>
+		 <h1 style="font-family: 'Satisfy', cursive;">By Producer </h1>
+			</div></button></a>
+
+		<div class="box">
+			<a href="searchByCountry.php">
+			<button>
+				<h1 style="font-family: 'Satisfy', cursive;">By Country</h1>
+			</div>
+			</button></a>
+
+		<div class="box">
+			<a href="searchByYear.php">
+		<button><div class="img-box">
+				<h1 style="font-family: 'Satisfy', cursive;">By Year</h1>
+		        </div></button>
+			</div></a>
+		
+	</div>
+
+
+
+
+	<script text="text/javascript" src="js/jquery.js"></script>
+        <script text="text/javascript">
+            $(document).ready(function(){
+                $('.toggle').click(function(){
+                    $('.toggle').toggleClass('active')
+                    $('nav').toggleClass('active')
+                })
+            })
+        </script>
+
+</body>
+</html>
